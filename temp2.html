@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chatbox ui</title>
+	<link rel="stylesheet" type="text/css" href="css/ttt.css">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body id="main">
+<div class="click" id="icon" onclick="toggle_visibility()">
+</div>
+<div class="chatbox" id="chatbox">
+<div class="chatlogs">
+	<div class="chat friend">
+		<div class="user-photo">name</div>
+		<p class="chat-message">what's up bro..!!</p>
+	</div>
+	<div class="chat self">
+		<div class="user-photo">name</div>
+		<p class="chat-message">what's up brother....!!</p>
+	</div>
+	<div class="chat friend">
+		<div class="user-photo">name</div>
+		<p class="chat-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus, turpis vel iaculis pretium, dui velit cursus nisi, ut sollicitudin sem est ac lorem. Vestibulum eu commodo nibh. Duis et semper mi. Praesent nec pharetra turpis. Suspendisse vestibulum, est eget cursus lobortis, metus enim consectetur ante, in interdum magna sem id ante.</p>
+	</div>
+	<div class="chat friend">
+		<div class="user-photo">name</div>
+		<p class="chat-message">what's up bro..!!</p>
+	</div>
+	<div class="chat self">
+		<div class="user-photo">name</div>
+		<p class="chat-message">what's up brother....!!</p>
+	</div>
+	<div class="chat friend">
+		<div class="user-photo">name</div>
+		<p class="chat-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus, turpis vel iaculis pretium, dui velit cursus nisi, ut sollicitudin sem est ac lorem. Vestibulum eu commodo nibh. Duis et semper mi. Praesent nec pharetra turpis. Suspendisse vestibulum, est eget cursus lobortis, metus enim consectetur ante, in interdum magna sem id ante.</p>
+	</div>
+</div>
+<div class="chat-form">
+	<textarea></textarea>
+	<button>Send</button>
+</div>	
+</div>
+</body>
+<script>
+	 function toggle_visibility(){
+      var e = document.getElementById('chatbox');
+     
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+</script>
+</html>
